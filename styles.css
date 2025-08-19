@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #b60909;
+    --laranja-claro: ##b60909;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -27,9 +30,9 @@ section {
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/fundo.png');
+    background-image: url('img/4965007.jpg');
     /* Substitua pelo caminho da sua imagem */
-
+    background-size: cover;
     background-position: right;
     border-radius: 80px;
     width: 100%;
@@ -77,7 +80,7 @@ section {
     margin-top: 3rem;
     margin-bottom: 3rem;
     background: url('img/flor.png') top right no-repeat,
-        url('img/logo pequena.png') bottom left no-repeat;
+        url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -104,6 +107,10 @@ h2 {
 
 }
 
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
 
 #contato {
     background-image: url('img/fundo final.webp');
@@ -116,7 +123,6 @@ h2 {
     margin:  auto;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
-
 }
 
 .formulario {
@@ -151,11 +157,6 @@ h2 {
     transform-origin: right center;
 }
 
-.alto-constraste{
-    background-color: #000000;
-    color: #ebe134;
-}
-
 .opcoes-acessibilidade{
     margin-top:10px;
     display: flex;
@@ -168,6 +169,41 @@ h2 {
 .apresenta-lista{
     display: none;
 }
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #b60909;
