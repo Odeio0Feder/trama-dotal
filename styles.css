@@ -151,6 +151,11 @@ h2 {
     transform-origin: right center;
 }
 
+.alto-constraste{
+    background-color: #000000;
+    color: #ebe134;
+}
+
 .opcoes-acessibilidade{
     margin-top:10px;
     display: flex;
